@@ -94,7 +94,7 @@ export default function Home() {
             Leadership means having deep respect for the past and a bold vision for the future.
           </p>
         </div>
-</div>
+      </div>
     </main>
   );
 }

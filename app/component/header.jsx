@@ -45,11 +45,25 @@ export default function Header() {
             Home
           </Link>
           <Link
-            href="/education"
+            href="/the-rise"
             className="text-lg hover:text-gray-500"
             onClick={() => setIsOpen(false)}
           >
-            Education
+            The Rise
+          </Link>
+          <Link
+            href="/leadership"
+            className="text-lg hover:text-gray-500"
+            onClick={() => setIsOpen(false)}
+          >
+            Leadership
+          </Link>
+          <Link
+            href="/finance"
+            className="text-lg hover:text-gray-500"
+            onClick={() => setIsOpen(false)}
+          >
+            Finance
           </Link>
         </div>
       </aside>
