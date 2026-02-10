@@ -65,6 +65,27 @@ export default function Header() {
           >
             Finance
           </Link>
+          <Link
+            href="/banking"
+            className="text-lg hover:text-gray-500"
+            onClick={() => setIsOpen(false)}
+          >
+            Banking
+          </Link>
+          <Link
+            href="/vision"
+            className="text-lg hover:text-gray-500"
+            onClick={() => setIsOpen(false)}
+          >
+            Vision
+          </Link>
+          <Link
+            href="/global-impact"
+            className="text-lg hover:text-gray-500"
+            onClick={() => setIsOpen(false)}
+          >
+            Global Impact
+          </Link>
         </div>
       </aside>
     </>
