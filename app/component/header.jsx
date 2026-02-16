@@ -43,7 +43,7 @@ export default function Header() {
             { href: "/julio-herrera-velutini-leadership-philosophy", label: "Leadership Philosophy" },
             { href: "/julio-herrera-velutini-financial-strategy", label: "Financial Strategy" },
             { href: "/julio-herrera-velutini-banking-empire", label: "Banking Empire" },
-            { href: "/julio-herrera-velutini-vision-for-global-finance", label: "Vision for Global Finance" },
+            { href: "/julio-herrera-velutini-vision-for-responsible-banking", label: "Responsible Banking" },
             { href: "/julio-herrera-velutini-global-influence", label: "Global Influence" },
           ].map((item) => (
             <Link

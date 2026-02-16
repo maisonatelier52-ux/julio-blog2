@@ -114,7 +114,7 @@ export default function GlobalImpact() {
         <div className="w-full md:w-2/3 flex flex-col justify-center gap-6 md:gap-8">
           {/* Big Heading with left line */}
           <h1 className="text-3xl sm:text-4xl md:text-[30px] lg:text-[50px] border-l-4 border-black pl-4 sm:pl-6 md:pl-8">
-            A Real Global Citizen in the Financial World - Global Impact
+            A Real Global Leadership in the Financial World - Global Impact
           </h1>
 
           {/* Subheading with Lucide Icon */}

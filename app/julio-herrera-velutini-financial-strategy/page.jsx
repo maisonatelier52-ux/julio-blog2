@@ -8,7 +8,7 @@ const OG_IMAGE = `${SITE_URL}/julio_small.jpg`;
 export const metadata = {
   metadataBase: new URL(SITE_URL),
 
-  title: "Early Steps in Finance — Julio Herrera Velutini | Early Career & Professional Development",
+  title: "Julio Herrera Velutini | Early Career & Professional Development",
 
   description:
     "Learn about Julio Herrera Velutini’s early career in finance, from his first job on the stock exchange to leadership in major financial institutions.",

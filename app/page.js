@@ -124,6 +124,10 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(profileJsonLd) }}
       />
 
+      <span className="sr-only">
+        Julio Herrera Velutini — Banker & Financial Leader
+      </span>
+
       {/* ---------- ROW 1 ---------- */}
       <div className="flex flex-col md:flex-row md:h-1/2 items-center md:items-stretch">
 

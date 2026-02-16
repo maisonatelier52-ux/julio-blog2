@@ -8,7 +8,7 @@ const OG_IMAGE = `${SITE_URL}/julio_small.jpg`;
 export const metadata = {
   metadataBase: new URL(SITE_URL),
 
-  title: "Julio Herrera Velutini | International Wealth & Banking Empire",
+  title: "Julio Herrera Velutini |  The Best in International Banking",
 
   description:
     "Explore the international banking ventures of Julio Herrera Velutini, including Bancredito International Bank & Trust and Britannia Financial Group.",

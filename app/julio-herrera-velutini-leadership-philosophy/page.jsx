@@ -8,7 +8,7 @@ const OG_IMAGE = `${SITE_URL}/julio_small.jpg`;
 export const metadata = {
   metadataBase: new URL(SITE_URL),
 
-  title: "Family Legacy & Education — Julio Herrera Velutini | Lineage and Leadership",
+  title: " Julio Herrera Velutini | Education, Lineage and Leadership",
 
   description:
     "Explore the family legacy, heritage in global finance, and international education of Julio Herrera Velutini, a leader in private banking and wealth management.",
@@ -131,7 +131,7 @@ export default function FamilyLegacy() {
             </p>
 
             <p className="pt-3">
-              Julio went to study in international schools all over Europe, including some of the best ones in the UK and Switzerland. This gave him a global perspective from the start. He got his bachelor's degree in 1990, which started him on a professional path that was based on both hard work and a big picture view.
+              Julio went to education in international schools all over Europe, including some of the best ones in the UK and Switzerland. This gave him a global perspective from the start. He got his bachelor's degree in 1990, which started him on a professional path that was based on both hard work and a big picture view.
             </p>
           </div>
         </div>
