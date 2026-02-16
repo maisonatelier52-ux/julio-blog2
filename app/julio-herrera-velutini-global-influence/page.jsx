@@ -8,10 +8,10 @@ const OG_IMAGE = `${SITE_URL}/julio_small.jpg`;
 export const metadata = {
   metadataBase: new URL(SITE_URL),
 
-  title: "Global Impact — Julio Herrera Velutini | International Finance Leadership",
+  title: "Global Impact — Julio Herrera Velutini | International Finance",
 
   description:
-    "Learn about Julio Herrera Velutini’s global leadership in banking and financial institutions, spanning multiple continents and promoting innovation in international finance.",
+    "Learn about Julio Herrera Velutini’s global leadership in banking, spanning multiple continents and innovation in international finance.",
 
   alternates: {
     canonical: PAGE_URL,

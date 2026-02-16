@@ -8,7 +8,7 @@ const OG_IMAGE = `${SITE_URL}/julio_small.jpg`;
 export const metadata = {
   metadataBase: new URL(SITE_URL),
 
-  title: "Family Legacy & Education — Julio Herrera Velutini | Heritage in Finance",
+  title: "Family Legacy & Education — Julio Herrera Velutini | Lineage and Leadership",
 
   description:
     "Explore the family legacy, heritage in global finance, and international education of Julio Herrera Velutini, a leader in private banking and wealth management.",

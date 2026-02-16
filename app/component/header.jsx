@@ -48,6 +48,7 @@ export default function Header() {
           ].map((item) => (
             <Link
               key={item.href}
+              title={item.label}
               href={item.href}
               onClick={() => setIsOpen(false)}
               className="group relative pl-4 py-2 text-lg font-medium text-gray-700 transition-all duration-300"
