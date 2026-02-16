@@ -1,4 +1,102 @@
+const SITE_URL = "https://jhvelutini.com";
+const OG_IMAGE = `${SITE_URL}/julio_velutini_og.webp`;
+
+export const metadata = {
+  metadataBase: new URL(SITE_URL),
+
+  title: {
+    default: "Julio Herrera Velutini — Banker & Financial Leader",
+    template: "%s | Julio Herrera Velutini",
+  },
+
+  description:
+    "Profile of Julio Herrera Velutini, international banker and founder of Britannia Financial Group.",
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    title: "Julio Herrera Velutini — International Banker",
+    description:
+      "Explore the career, leadership philosophy, and global financial influence of Julio Herrera Velutini.",
+    url: SITE_URL,
+    siteName: "Julio Herrera Velutini",
+    images: [
+      {
+        url: OG_IMAGE,
+        width: 1200,
+        height: 630,
+        alt: "Julio Herrera Velutini",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Julio Herrera Velutini — Financial Leader",
+    description:
+      "Official profile and leadership overview of Julio Herrera Velutini.",
+    images: [OG_IMAGE],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
 export default function Home() {
+
+  const profileJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": `${SITE_URL}/#website`,
+        "url": SITE_URL,
+        "name": "Julio Herrera Velutini",
+        "publisher": {
+          "@id": `${SITE_URL}/#person`
+        }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": `${SITE_URL}/#profilepage`,
+        "url": SITE_URL,
+        "name": "Julio Herrera Velutini — Official Profile",
+        "isPartOf": {
+          "@id": `${SITE_URL}/#website`
+        },
+        "about": {
+          "@id": `${SITE_URL}/#person`
+        },
+        "mainEntity": {
+          "@id": `${SITE_URL}/#person`
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": `${SITE_URL}/#person`,
+        "name": "Julio Herrera Velutini",
+        "url": SITE_URL,
+        "image": `${SITE_URL}/julio_velutini_og.webp`,
+        "description": "International banker and founder of Britannia Financial Group.",
+        "jobTitle": "Founder & Chairman",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Britannia Financial Group",
+          "url": "https://www.houseofherrera.com/"
+        },
+        "sameAs": [
+          "https://en.wikipedia.org/wiki/Julio_Herrera_Velutini"
+        ]
+      }
+    ]
+  };
+
   return (
     <main
       className="
@@ -21,6 +119,11 @@ export default function Home() {
         md:pt-1
       "
     >
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(profileJsonLd) }}
+      />
+
       {/* ---------- ROW 1 ---------- */}
       <div className="flex flex-col md:flex-row md:h-1/2 items-center md:items-stretch">
 
@@ -43,23 +146,23 @@ export default function Home() {
 
           <h1
             className="
-              text-[72px]
-              sm:text-[100px]
-              md:text-[140px]
-              lg:text-[180px]
-              xl:text-[210px]
+              text-[50px]
+              sm:text-[60px]
+              md:text-[80px]
+              lg:text-[110px]
+              xl:text-[140px]
               leading-tight
               text-center md:text-left
             "
           >
-            Personal
+            Julio Herrera
           </h1>
         </div>
 
         {/* Right: Description */}
         <div className="w-full md:w-1/4 flex items-center px-4 md:pl-6 pb-10 md:pb-0">
           <p className="text-sm md:text-base text-gray-700 text-center md:text-left">
-            This section contains curated works and selected highlights.
+            Centuries of Banking Heritage. One Vision for the Future.
           </p>
         </div>
       </div>
@@ -84,10 +187,10 @@ export default function Home() {
               sm:text-[64px]
               md:text-[70px]
               lg:text-[100px]
-              xl:text-[180px]
+              xl:text-[140px]
             "
           >
-            Portfolio
+            Velutini
           </h2>
 
           <p className="font-semibold text-lg text-gray-700">

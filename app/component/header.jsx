@@ -12,7 +12,7 @@ export default function Header() {
     <>
       {/* ---------- HEADER ---------- */}
       <header className="fixed top-0 left-0 w-full bg-white px-12 pt-6 pb-2 z-30 flex justify-between items-center">
-        <div className="text-2xl font-bold">JMHV</div>
+        <Link href="/" title="Home"><div className="text-2xl font-bold">JMHV</div></Link>
         <button
           onClick={toggleSidebar}
           className="flex items-center px-3 gap-2 text-lg border rounded-md"
@@ -32,60 +32,35 @@ export default function Header() {
 
       {/* ---------- Sidebar ---------- */}
       <aside
-        className={`fixed top-16 right-0 h-[calc(100%-64px)] w-64 bg-white shadow-lg z-50 transform transition-transform duration-300 ${
+        className={`fixed top-16 right-0 h-[calc(100%-64px)] w-70 bg-white shadow-lg z-50 transform transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex flex-col p-6 gap-6">
-          <Link
-            href="/"
-            className="text-lg hover:text-gray-500"
-            onClick={() => setIsOpen(false)}
-          >
-            Home
-          </Link>
-          <Link
-            href="/the-rise"
-            className="text-lg hover:text-gray-500"
-            onClick={() => setIsOpen(false)}
-          >
-            The Rise
-          </Link>
-          <Link
-            href="/leadership"
-            className="text-lg hover:text-gray-500"
-            onClick={() => setIsOpen(false)}
-          >
-            Leadership
-          </Link>
-          <Link
-            href="/finance"
-            className="text-lg hover:text-gray-500"
-            onClick={() => setIsOpen(false)}
-          >
-            Finance
-          </Link>
-          <Link
-            href="/banking"
-            className="text-lg hover:text-gray-500"
-            onClick={() => setIsOpen(false)}
-          >
-            Banking
-          </Link>
-          <Link
-            href="/vision"
-            className="text-lg hover:text-gray-500"
-            onClick={() => setIsOpen(false)}
-          >
-            Vision
-          </Link>
-          <Link
-            href="/global-impact"
-            className="text-lg hover:text-gray-500"
-            onClick={() => setIsOpen(false)}
-          >
-            Global Impact
-          </Link>
+        <div className="flex flex-col p-6 gap-4">
+          {[
+            { href: "/", label: "Overview" },
+            { href: "/julio-herrera-velutini-the-rise-to-power", label: "The Rise to Power" },
+            { href: "/julio-herrera-velutini-leadership-philosophy", label: "Leadership Philosophy" },
+            { href: "/julio-herrera-velutini-financial-strategy", label: "Financial Strategy" },
+            { href: "/julio-herrera-velutini-banking-empire", label: "Banking Empire" },
+            { href: "/julio-herrera-velutini-vision-for-global-finance", label: "Vision for Global Finance" },
+            { href: "/julio-herrera-velutini-global-influence", label: "Global Influence" },
+          ].map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              onClick={() => setIsOpen(false)}
+              className="group relative pl-4 py-2 text-lg font-medium text-gray-700 transition-all duration-300"
+            >
+              {/* Left Accent Bar */}
+              <span className="absolute left-0 top-0 h-full w-1 bg-black scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top" />
+
+              {/* Text */}
+              <span className="block group-hover:translate-x-2 group-hover:text-black transition-all duration-300">
+                {item.label}
+              </span>
+            </Link>
+          ))}
         </div>
       </aside>
     </>
