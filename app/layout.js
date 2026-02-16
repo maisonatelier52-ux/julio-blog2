@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Raleway } from "next/font/google";
+import { Geist, Geist_Mono,Raleway  } from "next/font/google";
 import "./globals.css";
 import Header from "./component/header";
 
@@ -16,13 +16,6 @@ const raleway = Raleway({
   subsets: ["latin"],
   variable: "--font-raleway",
 });
-
-export const metadata = {
-  metadataBase: new URL("https://jhvelutini.com"),
-  icons: {
-    icon: "/favicon.ico",
-  },
-};
 
 export default function RootLayout({ children }) {
   return (
