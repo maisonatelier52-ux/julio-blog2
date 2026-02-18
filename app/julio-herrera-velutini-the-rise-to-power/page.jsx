@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ArrowRightCircle } from "lucide-react";
 
-const SITE_URL = "https://jhvelutini.com";
+const SITE_URL = "https://www.jhvelutini.com";
 const PAGE_URL = `${SITE_URL}/julio-herrera-velutini-the-rise-to-power/`;
 const OG_IMAGE = `${SITE_URL}/julio_small.jpg`;
 

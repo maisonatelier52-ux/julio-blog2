@@ -1,4 +1,4 @@
-const SITE_URL = "https://jhvelutini.com";
+const SITE_URL = "https://www.jhvelutini.com";
 const OG_IMAGE = `${SITE_URL}/julio_velutini_og.webp`;
 
 export const metadata = {
@@ -132,8 +132,8 @@ export default function Home() {
       <div className="flex flex-col md:flex-row md:h-1/2 items-center md:items-stretch">
 
         {/* Left: Heading */}
-        <div className="relative w-full md:w-3/4 flex items-center justify-center py-12 md:py-0">
-  
+        <div className="relative w-full md:w-3/4 flex flex-col items-center md:items-start justify-center py-12 md:py-0">
+
           {/* Short vertical divider */}
           <span
             className="
@@ -159,7 +159,7 @@ export default function Home() {
               text-center md:text-left
             "
           >
-            Julio Herrera
+            Julio Herrera <span className="md:hidden">Velutini</span>
           </h1>
         </div>
 
@@ -187,8 +187,7 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center text-center px-4 pb-20">
           <h2
             className="
-              text-[48px]
-              sm:text-[64px]
+              hidden md:block
               md:text-[70px]
               lg:text-[100px]
               xl:text-[140px]

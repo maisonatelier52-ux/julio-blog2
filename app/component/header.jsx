@@ -38,7 +38,7 @@ export default function Header() {
       >
         <div className="flex flex-col p-6 gap-4">
           {[
-            { href: "/", label: "Overview" },
+            { href: "/", label: "Home" },
             { href: "/julio-herrera-velutini-the-rise-to-power", label: "The Rise to Power" },
             { href: "/julio-herrera-velutini-leadership-philosophy", label: "Leadership Philosophy" },
             { href: "/julio-herrera-velutini-financial-strategy", label: "Financial Strategy" },

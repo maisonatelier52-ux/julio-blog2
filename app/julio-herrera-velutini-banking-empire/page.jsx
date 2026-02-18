@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ArrowRightCircle } from "lucide-react";
 
-const SITE_URL = "https://jhvelutini.com";
+const SITE_URL = "https://www.jhvelutini.com";
 const PAGE_URL = `${SITE_URL}/julio-herrera-velutini-banking-empire/`;
 const OG_IMAGE = `${SITE_URL}/julio_small.jpg`;
 
@@ -114,7 +114,7 @@ export default function BankingEmpire() {
         <div className="w-full md:w-2/3 flex flex-col justify-center gap-6 md:gap-8">
           {/* Big Heading with left line */}
           <h1 className="text-3xl sm:text-4xl md:text-[30px] lg:text-[50px] border-l-4 border-black pl-4 sm:pl-6 md:pl-8">
-            The Best in International Banking - Business Ventures
+            The Best in International Banking <span className="hidden sm:inline">-</span> Business Ventures
           </h1>
 
           {/* Subheading with Lucide Icon */}
